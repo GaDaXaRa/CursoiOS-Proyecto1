@@ -51,7 +51,20 @@ class ViewController: UIViewController {
     }
 
     private var landmarks = [Landmark]()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pushFromCell", let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell), let viewController = segue.destination as? DetailViewController {
+            let model = landmarks[indexPath.row]
+            viewController.viewModel = model.toDetailViewModel
+        }
+    }
+}
 
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        performSegue(withIdentifier: "pushFromCell", sender: cell)
+    }
 }
 
 extension ViewController: UITableViewDataSource {

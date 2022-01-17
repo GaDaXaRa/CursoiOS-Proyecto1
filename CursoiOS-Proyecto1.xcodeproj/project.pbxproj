@@ -15,6 +15,7 @@
 		D740D01927957EA8008F0D01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D740D01727957EA8008F0D01 /* LaunchScreen.storyboard */; };
 		D740D02227957EEE008F0D01 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = D740D02127957EEE008F0D01 /* landmarkData.json */; };
 		D740D02527957EFF008F0D01 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740D02427957EFF008F0D01 /* Landmark.swift */; };
+		D77765FD2795EA520038BEAB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77765FC2795EA520038BEAB /* DetailViewController.swift */; };
 		D789EA192795D74D00CC2705 /* LandmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D789EA172795D74D00CC2705 /* LandmarkTableViewCell.swift */; };
 		D789EA1A2795D74D00CC2705 /* LandmarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D789EA182795D74D00CC2705 /* LandmarkTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		D740D01A27957EA8008F0D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D740D02127957EEE008F0D01 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		D740D02427957EFF008F0D01 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		D77765FC2795EA520038BEAB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D789EA172795D74D00CC2705 /* LandmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkTableViewCell.swift; sourceTree = "<group>"; };
 		D789EA182795D74D00CC2705 /* LandmarkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandmarkTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				D740D01A27957EA8008F0D01 /* Info.plist */,
 				D789EA172795D74D00CC2705 /* LandmarkTableViewCell.swift */,
 				D789EA182795D74D00CC2705 /* LandmarkTableViewCell.xib */,
+				D77765FC2795EA520038BEAB /* DetailViewController.swift */,
 			);
 			path = "CursoiOS-Proyecto1";
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				D740D01127957EA4008F0D01 /* ViewController.swift in Sources */,
 				D740D00D27957EA4008F0D01 /* AppDelegate.swift in Sources */,
 				D740D00F27957EA4008F0D01 /* SceneDelegate.swift in Sources */,
+				D77765FD2795EA520038BEAB /* DetailViewController.swift in Sources */,
 				D789EA192795D74D00CC2705 /* LandmarkTableViewCell.swift in Sources */,
 				D740D02527957EFF008F0D01 /* Landmark.swift in Sources */,
 			);

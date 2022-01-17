@@ -41,6 +41,10 @@ extension Landmark {
     var toTableCellViewModel: LandmarkTableViewCellViewModel {
         .init(title: name, description: park, image: image)
     }
+    
+    var toDetailViewModel: DetailViewModel {
+        .init(name: name, description: park, image: image)
+    }
 }
 
 enum FetchLandmarksError: Error {
