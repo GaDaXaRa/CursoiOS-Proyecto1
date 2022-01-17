@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Landmarks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CursoiOS_Proyecto1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Landmarks" id="BYZ-38-t0r" customClass="ViewController" customModule="CursoiOS_Proyecto1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zIa-ML-2Xb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="landmarkCell" textLabel="HIZ-zx-s8P" detailTextLabel="D6b-p1-9Jo" style="IBUITableViewCellStyleSubtitle" id="15Y-j5-eXI">
@@ -55,8 +55,8 @@
                         <constraints>
                             <constraint firstItem="zIa-ML-2Xb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cpm-v5-T8H"/>
                             <constraint firstItem="zIa-ML-2Xb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E4M-76-uAW"/>
-                            <constraint firstItem="zIa-ML-2Xb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g92-OL-Y5K"/>
-                            <constraint firstItem="zIa-ML-2Xb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s3l-9R-EYb"/>
+                            <constraint firstItem="zIa-ML-2Xb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="g92-OL-Y5K"/>
+                            <constraint firstItem="zIa-ML-2Xb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s3l-9R-EYb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4jx-Sk-L42"/>

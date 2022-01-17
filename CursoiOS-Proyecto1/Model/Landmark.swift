@@ -37,6 +37,10 @@ extension Landmark {
     var image: UIImage? {
         UIImage(named: imageName)
     }
+    
+    var toTableCellViewModel: LandmarkTableViewCellViewModel {
+        .init(title: name, description: park, image: image)
+    }
 }
 
 enum FetchLandmarksError: Error {

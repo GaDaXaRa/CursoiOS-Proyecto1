@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("did load")
+        tableView.register(.init(nibName: "LandmarkTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "LandmarkTableViewCell")
+        navigationItem.title = "Landmarks"
         fetchData()
     }
     
@@ -58,12 +60,12 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "landmarkCell", for: indexPath)
-        let model = landmarks[indexPath.row]
-        cell.textLabel?.text = model.name
-        cell.detailTextLabel?.text = model.park
-        cell.imageView?.image = model.image
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "LandmarkTableViewCell", for: indexPath) as? LandmarkTableViewCell else {
+            fatalError()
+        }
         
+        let model = landmarks[indexPath.row]
+        cell.configure(with: model.toTableCellViewModel)
         return cell
     }
 }
