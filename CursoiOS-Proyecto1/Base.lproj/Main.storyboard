@@ -92,22 +92,34 @@
                                                     <constraint firstAttribute="height" constant="200" id="Jtg-n0-wW2"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju4-j8-67O">
-                                                <rect key="frame" x="15" y="164.5" width="384" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-uB-4WJ">
+                                                <rect key="frame" x="0.0" y="148.5" width="414" height="51.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju4-j8-67O">
+                                                        <rect key="frame" x="15" y="15" width="384" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.30113998724489793" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Ju4-j8-67O" secondAttribute="trailing" constant="15" id="QpT-gz-vpu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ju4-j8-67O" secondAttribute="bottom" constant="15" id="bCs-gF-yML"/>
+                                                    <constraint firstItem="Ju4-j8-67O" firstAttribute="top" secondItem="Hdt-uB-4WJ" secondAttribute="top" constant="15" id="eFY-nQ-m9l"/>
+                                                    <constraint firstItem="Ju4-j8-67O" firstAttribute="leading" secondItem="Hdt-uB-4WJ" secondAttribute="leading" constant="15" id="vwc-VF-gLL"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Hdt-uB-4WJ" secondAttribute="trailing" id="0Hu-cK-tLD"/>
                                             <constraint firstAttribute="trailing" secondItem="M95-Yg-dxn" secondAttribute="trailing" id="NIn-fg-QtO"/>
-                                            <constraint firstItem="Ju4-j8-67O" firstAttribute="leading" secondItem="x3u-9i-rcB" secondAttribute="leading" constant="15" id="PaK-sr-dyS"/>
                                             <constraint firstAttribute="bottom" secondItem="M95-Yg-dxn" secondAttribute="bottom" id="VPh-8y-tsQ"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ju4-j8-67O" secondAttribute="bottom" constant="15" id="VoM-RP-j0l"/>
                                             <constraint firstItem="M95-Yg-dxn" firstAttribute="leading" secondItem="x3u-9i-rcB" secondAttribute="leading" id="hL9-RZ-V26"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ju4-j8-67O" secondAttribute="trailing" constant="15" id="iKd-vz-Mbn"/>
                                             <constraint firstItem="M95-Yg-dxn" firstAttribute="top" secondItem="x3u-9i-rcB" secondAttribute="top" id="j6V-3b-qZS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hdt-uB-4WJ" secondAttribute="bottom" id="jYd-S8-JS7"/>
+                                            <constraint firstItem="Hdt-uB-4WJ" firstAttribute="leading" secondItem="x3u-9i-rcB" secondAttribute="leading" id="lfK-f3-LMX"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="zL6-EU-xRo">
