@@ -68,7 +68,6 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-
 private extension ViewController {
     func fetchData() {
         fetchLandmarks.fetchLandmarks { [weak self] result in
